@@ -1,73 +1,133 @@
-# Welcome to your Lovable project
+# Hostel Management System (HCI Project)
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This project is a **Hostel Management System website** developed as part of a **Human Computer Interaction (HCI)** academic project.
 
-## How can I edit this code?
+The aim of the system is to digitize hostel-related processes such as complaint registration, housekeeping tracking, room inventory management, and safety access. The website replaces the traditional manual register-based system with a **clear, form-based, and transparent web interface**.
 
-There are several ways of editing your application.
+The design is intentionally **institutional, minimal, and practical**, resembling a real college hostel management portal rather than a startup-style application.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Problem Statement
 
-Changes made via Lovable will be committed automatically to this repo.
+In the existing hostel system, students are required to physically go to the first floor and write complaints in a register. This process is:
 
-**Use your preferred IDE**
+- Time-consuming  
+- Non-transparent  
+- Difficult to track  
+- Prone to delays and lost complaints  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Students have no way to know:
+- Whether a complaint has been noticed
+- Whether work has started
+- When the issue will be resolved
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+This project addresses these issues by providing a **digital, role-based hostel management website**.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## User Roles
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+The system supports three user roles:
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Student
+- Raise complaints
+- View complaint status
+- View common housekeeping complaints
+- Check room cleaning schedule
+- Manage room inventory checklist
+- View available rooms and apply for room change
+- Access lost & found board
+- Use emergency contact feature
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### Warden (Admin)
+- View all complaints (including anonymous)
+- Update complaint status
+- Approve or reject visitor requests
+- Mark cleaning completion
+- Manage room availability
+- Approve or reject room change requests
 
-**Edit a file directly in GitHub**
+### Worker / Repair Person
+- View assigned complaints
+- Update complaint status (Seen, In Progress, Resolved)
+- View housekeeping complaints (read-only)
+- Mark cleaning tasks as completed
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## Key Features
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Complaint Management System
+- Digital complaint registration
+- Complaint categories (AC, Plumbing, Electrical, Housekeeping, etc.)
+- Unique complaint ID and timestamp
+- Complaint status tracking:
+  - Submitted
+  - Seen
+  - In Progress
+  - Resolved
+  - Reopened
+  - Closed
+- Reopen complaint option if issue is not resolved
+- Anonymous complaint option for sensitive issues
 
-## What technologies are used for this project?
+### Shared Housekeeping Complaint Visibility
+- Common housekeeping complaints are visible to:
+  - Students
+  - Warden
+  - Workers
+- Prevents duplicate complaints
+- Improves transparency
 
-This project is built with:
+### Room Cleaning Schedule
+- Floor-wise cleaning schedule
+- Cleaning completion marked by staff
+- Completion timestamp visible to students
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Room Inventory Checklist
+- Inventory check at semester start:
+  - Bed
+  - Table
+  - Fan
+  - Light
+  - Cupboard
+- Damaged or missing items automatically generate complaints
 
-## How can I deploy this project?
+### Room Availability & Room Change Requests
+- Students can view available rooms
+- Submit room change requests with reason
+- Warden approval workflow
+- Automatic update of room occupancy status
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+### Emergency Button
+- Fixed-position emergency button
+- One-tap access to:
+  - Warden
+  - Security
+  - Medical Room
 
-## Can I connect a custom domain to my Lovable project?
+### Visitor Log System
+- Visitor request submission by students
+- Approval or rejection by warden
+- Time-bound visitor access
 
-Yes, you can!
+### Lost & Found Board
+- Digital lost and found notice board
+- Table-based layout
+- Data stored using localStorage
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Design & HCI Principles Applied
+
+- Form-based interaction for clarity
+- Role-based navigation
+- Visibility of system status
+- Reduced physical and cognitive effort
+- Error prevention through structured inputs
+- Transparency and user trust
+- Minimal and distraction-free UI
+
