@@ -129,22 +129,18 @@ The system supports three user roles:
 Follow these steps to get the project up and running on your local machine.
 Prerequisites
 Node.js installed (LTS version recommended).
+```
+# Step 1: Clone the repository
+git clone https://github.com/[your-username]/hostel-management-system.git 
 
-Installation
-Clone the repository:
-
-Bash
-git clone https://github.com/[your-username]/hostel-management-system.git
+# Step 2: Navigate to the project directory
 cd hostel-management-system
-Install dependencies:
 
-Bash
+# Step 3: Install the necessary dependencies
 npm install
-Run the development server:
 
-Bash
+# Step 4: Start the development server
 npm run dev
-Open your browser and navigate to the URL provided in your terminal (usually http://localhost:5173 or http://localhost:3000).
-
+```
 --
 
