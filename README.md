@@ -118,16 +118,33 @@ The system supports three user roles:
 - Digital lost and found notice board
 - Table-based layout
 - Data stored using localStorage
+--
+## Tech Stack
+- Frontend: HTML5, CSS3, JavaScript
+- Framework: [Your Framework, e.g., React/Vue/Svelte]
+- Design Tool: Figma (High-Fidelity Prototyping)
+- Environment: Node.js
+--
+## Getting Started
+Follow these steps to get the project up and running on your local machine.
+Prerequisites
+Node.js installed (LTS version recommended).
 
----
+Installation
+Clone the repository:
 
-## Design & HCI Principles Applied
+Bash
+git clone https://github.com/[your-username]/hostel-management-system.git
+cd hostel-management-system
+Install dependencies:
 
-- Form-based interaction for clarity
-- Role-based navigation
-- Visibility of system status
-- Reduced physical and cognitive effort
-- Error prevention through structured inputs
-- Transparency and user trust
-- Minimal and distraction-free UI
+Bash
+npm install
+Run the development server:
+
+Bash
+npm run dev
+Open your browser and navigate to the URL provided in your terminal (usually http://localhost:5173 or http://localhost:3000).
+
+--
 
