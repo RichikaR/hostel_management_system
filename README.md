@@ -121,12 +121,13 @@ The system supports three user roles:
 --
 ## Tech Stack
 - Frontend: HTML5, CSS3, JavaScript
-- Framework: [Your Framework, e.g., React/Vue/Svelte]
+- Framework: React
 - Design Tool: Figma (High-Fidelity Prototyping)
 - Environment: Node.js
 --
 ## Getting Started
 Follow these steps to get the project up and running on your local machine.
+
 Prerequisites
 Node.js installed (LTS version recommended).
 ```
