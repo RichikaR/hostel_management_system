@@ -149,3 +149,4 @@ npm run dev
 ## Contributors
 
 - Yamini – Added contribution to project
+- Aditi - Added contribution to the project
