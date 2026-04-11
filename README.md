@@ -148,5 +148,8 @@ npm run dev
 
 ## Contributors
 
+- Richika - Added contribution to the project
 - Yamini – Added contribution to project
 - Aditi - Added contribution to the project
+
+
