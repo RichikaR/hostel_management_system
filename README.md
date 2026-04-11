@@ -144,4 +144,8 @@ npm install
 npm run dev
 ```
 --
+---
 
+## Contributors
+
+- Yamini – Added contribution to project
